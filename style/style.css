@@ -1,0 +1,110 @@
+html {
+  font-size: 62.5%; }
+  html *::after,
+  html *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.7;
+  background-color: #f7f7f7; }
+
+.page-heading {
+  font-weight: 500;
+  font-size: 55px;
+  color: #141414; }
+  @media all and (max-width: 768px) {
+    .page-heading {
+      font-size: 28px; } }
+
+.heading2 {
+  font-weight: 300;
+  font-size: 40px;
+  color: #141414; }
+  @media all and (max-width: 768px) {
+    .heading2 {
+      font-size: 22px; } }
+
+.text {
+  font-size: 2.4rem;
+  transition: all 0.4s;
+  font-weight: 300; }
+  @media all and (max-width: 1900px) {
+    .text {
+      font-size: 2.2rem; } }
+  @media all and (max-width: 600px) {
+    .text {
+      text-align: center; } }
+
+.form-control {
+  border-radius: none;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  height: 50px;
+  font-size: 20px;
+  background-color: white; }
+  .form-control:focus {
+    outline: none;
+    border-bottom: 2px solid #17b117; }
+  @media all and (max-width: 600px) {
+    .form-control {
+      border: 0.5px solid rgba(0, 0, 0, 0.2); } }
+
+.hero-img {
+  width: 40%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6); }
+
+iframe {
+  height: 600px; }
+
+.pdf-border {
+  border: 2px solid black; }
+
+.pdf-spacing {
+  padding-top: 150px; }
+
+.styled-btn, .styled-btn:link, .styled-btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem !important;
+  display: inline-block;
+  transition: all 0.6s !important;
+  position: relative;
+  font-size: 2rem !important;
+  border: none;
+  cursor: pointer; }
+
+.styled-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6); }
+  .styled-btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.styled-btn:active, .styled-btn:focus {
+  transform: translateY(-1px);
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.styled-btn--send {
+  background-color: #21a821 !important;
+  color: white !important;
+  font-size: 2rem;
+  font-weight: 700; }
+  .styled-btn--send::after {
+    background-color: #21a821 !important; }
+
+.styled-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s; }
