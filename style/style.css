@@ -60,7 +60,8 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6); }
 
 iframe {
-  height: 600px; }
+  height: 700px;
+  width: 100%; }
 
 .pdf-border {
   border: 2px solid black; }

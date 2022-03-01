@@ -46,21 +46,21 @@ body {
 }
 
 .page-heading {
-    font-weight: 500;
-    font-size: 55px;
-    color: $color-black;
-    @include respond(tablet) {
-      font-size: 28px;
-    }
+  font-weight: 500;
+  font-size: 55px;
+  color: $color-black;
+  @include respond(tablet) {
+    font-size: 28px;
+  }
 }
 
 .heading2 {
-    font-weight: 300;
-    font-size: 40px;
-    color: $color-black;
-    @include respond(tablet) {
-      font-size: 22px;
-    }
+  font-weight: 300;
+  font-size: 40px;
+  color: $color-black;
+  @include respond(tablet) {
+    font-size: 22px;
+  }
 }
 
 .text {
@@ -96,68 +96,69 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
 }
 
-iframe{
-    height: 600px;
+iframe {
+  height: 700px;
+  width: 100%;
 }
 
-.pdf-border{
-    border: 2px solid black;
+.pdf-border {
+  border: 2px solid black;
 }
-.pdf-spacing{
-    padding-top: 150px;
+.pdf-spacing {
+  padding-top: 150px;
 }
 
 .styled-btn {
-    &,
-    &:link,
-    &:visited {
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 1.5rem 4rem !important;
-      display: inline-block;
-      transition: all 0.6s !important;
-      position: relative;
-      font-size: 2rem !important;
-      // Change for the <button> element
-      border: none;
-      cursor: pointer;
-    }
-  
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(black, 0.6);
-      &::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-      }
-    }
-  
-    &:active,
-    &:focus {
-      transform: translateY(-1px);
-      box-shadow: 0.5rem 1rem rgba(black, 0.2);
-    }
-  
-    &--send {
-      //Nav Button
-      background-color: rgb(33, 168, 33) !important;
-      color: white !important;
-      font-size: 2rem;
-      font-weight: 700;
-      &::after {
-        background-color: rgb(33, 168, 33)  !important;
-      }
-    }
-  
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem !important;
+    display: inline-block;
+    transition: all 0.6s !important;
+    position: relative;
+    font-size: 2rem !important;
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.6);
     &::after {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all 0.4s;
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
     }
   }
+
+  &:active,
+  &:focus {
+    transform: translateY(-1px);
+    box-shadow: 0.5rem 1rem rgba(black, 0.2);
+  }
+
+  &--send {
+    //Nav Button
+    background-color: rgb(33, 168, 33) !important;
+    color: white !important;
+    font-size: 2rem;
+    font-weight: 700;
+    &::after {
+      background-color: rgb(33, 168, 33) !important;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+}
